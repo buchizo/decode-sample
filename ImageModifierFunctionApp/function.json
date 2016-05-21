@@ -1,0 +1,19 @@
+﻿{
+  "bindings": [
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "outcontainer/{name}.png",
+      "connection": "appsettings_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "blobTrigger",
+      "name": "inputBlob",
+      "path": "incontainer/{name}.png",
+      "connection": "appsettings_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
