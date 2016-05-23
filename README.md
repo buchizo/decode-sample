@@ -1,5 +1,7 @@
 # decode-sample
 
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 ## Image Modifier
 
 This sample can modify image to gray scale.
