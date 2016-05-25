@@ -16,11 +16,11 @@ namespace ImageModifier
                 var outputFolderPath = Console.ReadLine();
 
                 using (var ss = new FileStream(sourceImagePath, FileMode.Open, FileAccess.Read))
-                using (var os = new FileStream(Path.Combine(outputFolderPath, "output.png"), FileMode.CreateNew, FileAccess.ReadWrite))
+                using (var os = new FileStream(Path.Combine(outputFolderPath, "output.png"), FileMode.Create, FileAccess.ReadWrite))
                 {
                     Console.WriteLine("Start..");
                     var im = new Modifier();
-                    im.ToGrayScale(ss, os);
+                    im.RunDecodedemo(ss, os);
                     Console.WriteLine("Finished.");
                 }
             }
